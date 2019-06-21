@@ -1,0 +1,319 @@
+*,*:before, *:after{
+    box-sizing: border-box;
+}
+header, nav, section {display:block;}
+
+html, body{
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-image: url("./BackGround_SmallSize-assets/background.png");
+    text-align: center;
+}
+header img{
+    width: 100%;
+}
+
+header img[alt="food"]{
+    display: none;
+}
+
+ nav {
+     width: 100%;
+     text-align: center;
+     padding-bottom: 30px;
+ }
+
+ nav ul{
+     list-style: none;
+     padding: 0;
+     margin: 0;
+ }
+
+ nav li {
+     display: block;
+     /* padding-right: 60px; */
+     height: 45px;
+ 
+ }
+
+ nav a {
+     color: #fff200;
+     text-shadow: 2px 2px black;
+     text-decoration: none;
+     font-size: 200%;
+     font-family: 'Pacifico', cursive;
+     transition: all .7s; 
+     
+     }
+
+nav a:hover{
+        color: #CC1109;
+}
+
+#small-logo{
+    display: none;
+}
+#banner{
+    width: 100%;
+    display: none;
+}
+#bannerGray{
+    width: 80%;
+    padding-top: 10px;
+    margin-bottom: -20px;
+
+}
+
+/*SAVORY*/
+#Savory {
+    padding-left:1%;
+    background-color: #CC1109;  
+    overflow: hidden  
+}
+
+#Sweet section, #Savory section, #Drinks section{
+    margin: 0 2% 2% 2%;
+    float: left;
+    text-align: center;
+}
+
+
+#Savory h1, #Sweet h1, #Drinks h1{
+    font: 200%/1.4   'Shadows Into Light', cursive;
+    color: #fff;
+    
+}
+
+#Savory .recipe, #Sweet .recipe, #Drinks .recipe {
+    width: 300px;
+    overflow: hidden;
+}
+
+#Savory img, #Sweet img, #Drinks img {
+    width: 600px;
+    transition: all .5s;
+
+}
+
+#Savory img:hover, #Sweet img:hover, #Drinks img:hover {
+    transform: translateX(-300px);
+}
+
+
+section ul {
+    display: inline-block;
+    list-style: none;
+    text-align: left;
+    padding-left: 10%;
+}
+
+section li{
+    font: 150%/1.4   'Shadows Into Light', cursive;
+    color: #e2e2e2;
+}
+
+
+/*SWEET*/
+#Sweet{
+    padding-left:1%;
+    background-color: #3ed2dc;
+    overflow: hidden;
+}
+
+#Sweet h1, #Sweet section li{
+    color: #000;
+}
+
+/*Drinks*/
+#Drinks{
+    padding-left:1%;
+    background-color: #CC6323;
+    overflow: hidden;
+}
+
+/*Contact*/
+#Contact{
+    background-size: 100% 100%;
+}
+#Contact video{
+    width: 100%;
+}
+
+#Contact .share  {
+    text-align: center;
+    width: 100%;
+    bottom: 10%;
+    position: absolute;
+    color: #fff;
+    text-shadow: 2px 2px black;
+}
+
+#Contact .share h3 {
+    font: normal 100% 'Pacifico', cursive;
+}
+
+#Contact .video-share {
+    position: relative;
+}
+
+#Contact .share a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 100%;
+    padding: 15px;
+    
+    transition: all .5s;
+}
+
+#Contact  .share a:hover{
+    font-size: 100%;
+    color: #af6c31;
+}
+
+#back.fromVideo{
+    position:absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+
+/*Borders*/
+#Savory_Sweet{
+      background: linear-gradient(#240803, #3ed2dc);
+      height: 30px;
+      width: 100%;
+}
+
+#Sweet_Drinks{
+        background: linear-gradient(#240803, #CC6323);
+
+    height: 30px;
+    width: 100%;
+}
+
+#Header_Savory{
+    clear: both;
+    background: linear-gradient(#240803, #CC1109);
+    height: 10px;
+    width: 100%;
+}
+
+
+/*Back to top Button*/
+#back{
+    color: white;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+#back a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+   }
+
+#back span {
+    display: inline-block;
+    font-size: 36px;
+    border-radius: 100%;
+    border: solid 2px white;
+    width: 40px;
+    text-align: center;
+
+   }
+
+
+
+    @media screen and (min-width:720px){
+        #banner{
+            max-width: 500px;
+            max-height: 200px;
+            display: inline-block;
+        }
+        #bannerGray{
+            display: none;
+        }
+
+        #Contact .share h3 {
+            font: normal 150% 'Pacifico', cursive;
+        }
+
+        #Contact .share a{
+            font-size: 150%;
+        }
+    }
+
+
+    @media screen and (min-width:1080px){
+        header img {
+            width: 100%;
+            height: 100vh;
+            float: left;
+        }
+
+        header img[alt="food"]{
+            display: block;
+        }
+
+        nav {
+             position: absolute;
+         }
+        
+         nav ul{
+             list-style: none;
+             padding: 0;
+             margin: 0;
+         }
+        
+         nav li {
+            display: inline-block;
+            padding-right: 60px;
+            height: 45px;
+         
+        }
+        
+        #small-logo{
+            width: 65px;
+            height: 65px;
+            position: absolute;
+            top: 1%;
+            left: 1%;
+            display: block;
+        }
+        #banner{
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            width: 50%;
+            height: 50%;
+            max-width: 500px;
+            max-height: 200px;
+        }
+        
+        /*SAVORY*/
+        #Savory, #Sweet, #Drinks {
+            min-height: 100vh;
+        }
+        
+        #Sweet section, #Savory section, #Drinks section{
+            width: 20%;
+        }
+        
+        /*Contact*/
+        #Contact .share  {
+            bottom: 120px;
+        }
+        
+        #Contact .share h3 {
+            font: normal 200% 'Pacifico', cursive;
+        }
+        
+        #Contact .share a{
+            font-size: 150%;
+        }
+        
+    }
